@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterarion Statements</title>
+</head>
+<body style="background-color: greenyellow;">
+    
+      <h1 style="text-decoration:underline ;">Iterarion Statements</h1>
+
+      <h2> Find the number of digits</h2>
+      <b>Que1: Take a number from the user and print the count of digits in that number. <br>
+        Note: You have to complete Find_Digits. No need to take any input.</b>
+      <h4>Ans: <B><Pre>let count=0;
+        while(N>0){
+          count+=1;
+          N=Math.floor(N/10)
+        }
+        return count;</Pre></B> </h4>
+    --------------------------------------------------------------------------------------
+    <h2>Find The Fives</h2>
+    <b>Que2: Among all the digits from 0−9, PrepBuddy likes number 5.
+     He has a number and wants you to find out the number of times 5 occurred in the given number.<br>
+     Note: You have to complete Find_Five. No need to take any input.</b>
+    <h4>Ans: <B><Pre>n=N.toString()
+        let count=0;
+        for(let i=0;i< n.length;i++){
+          if(n[i]==="5"){
+            count+=1;
+          }
+        }
+        return count; </Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Find Sum </h2>
+    <b>Que3: You are given an integer N, and your task is to find the sum of all the even integers starting from 1 upto N(N inclusive).<br>
+        Note: You have to complete findSum function. No need to take any input.</b>
+    <h4>Ans: <B><Pre> let add=0;
+        for(let i=1;i<=n;i++){
+          if(i%2===0){
+            add+=i;
+          }
+        }
+        return add;</Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Find the sum of the digits of a given number.</h2>
+    <b>Que4: Write a program that takes a number from the user and get the sum of the digits present in the number.<br>
+        Note: You have to complete Number_Sum. No need to take any input.</b>
+    <h4>Ans: <B><Pre>let sum=0;
+        while(N>0){
+          sum+=N%10;
+          N=Math.floor(N/10)
+        }
+        return sum;</Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Print the Odds</h2>
+    <b>Que5: Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first.<br>
+        Note: You have to complete Print_Odd. No need to take any input.</b>
+    <h4>Ans: <B><Pre> if(N===2){
+        console.log(2)
+      }else{
+        console.log(2)
+        for (let i = 2;i<=N;i++){
+             if(i%2!==0){
+               console.log(i)
+             }
+           }
+      }</Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Print the Pattern.</h2>
+    <b>Que6: Write a program which ask user for no of lines and print a pattern using an asterik . <br>
+        Note: You have to complete Print_pattern. No need to take any input.</b>
+    <h4>Ans: <B><Pre>let s=""
+        for(let i = 1;i<=N;i++){
+          for(let j = 1;j<=i;j++){
+            s+="*"
+          }
+          console.log(s)
+          s=""
+        }</Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Check whether a Number is a prime or not. </h2>
+    <b>Que7: Write a program which takes  a number from user and check whether number is prime number or not a prime number. <br>
+        Note: You have to complete Prime_Check. No need to take any input.</b>
+    <h4>Ans: <B><Pre>if(N===1){
+        return ("NO")
+      }else{
+        let a=0;
+      for (let i = 2;i< N;i++){
+        if (N%i===0){
+          a=1
+          break;
+        }
+      }
+        if(a===0){
+          return ("YES")
+        }else{
+          return ("NO")
+        }
+      }</Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Print Numbers </h2>
+    <b>Que8: You are given an integer N, and your task is to print all the integers starting from 1 till N (N inclusive).<br>
+        Note: You have to complete printNumbers function. No need to take any input.</b>
+    <h4>Ans: <B><Pre>p=""
+        for(let i=1;i<=n;i++){
+          p+=i+" "
+        }
+        console.log(p)</Pre></B></h4>
+    --------------------------------------------------------------------------------------
+    <h2>Print the Table</h2>
+    <b>Que9: Write a program which takes a number from user and print the table.<br></b>
+    <h4>Ans: <B><Pre>for(let i = 1;i<=10;i++)
+        {
+      console.log(`${N} * ${i} = ${N*i}`)
+    }</Pre></B></h4>
+    ------------------------------------END--------------------------------------------------
+
+</body>
+</html>
